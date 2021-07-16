@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Schelling's Model</title>
+    <link rel="stylesheet" href="schelling.css" />
+  </head>
+
+  <body>
+    <h1>Schelling's Model of Segregation</h1>
+    <div>
+      <table>
+        <tr>
+          <td class="field"><label for="dimension">Dimension:</label></td>
+          <td class="field"><input id="dimension" type="text" value="50" /></td>
+        </tr>
+        <tr>
+          <td class="field">
+            <label for="threshold">Similarity Threshold:</label>
+          </td>
+          <td class="field">
+            <input id="threshold" type="text" value="0.35" />
+          </td>
+        </tr>
+        <tr>
+          <td class="field">
+            <label for="vacantRatio">% Vacant Cells:</label>
+          </td>
+          <td class="field">
+            <input id="vacantRatio" type="text" value="0.05" />
+          </td>
+        </tr>
+        <tr>
+          <td class="field">
+            <label for="popRatio">% Population Split:</label>
+          </td>
+          <td class="field"><input id="popRatio" type="text" value="0.5" /></td>
+        </tr>
+        <tr>
+          <td class="field"><label for="popXcolor">Population 1:</label></td>
+          <td class="field">
+            <input id="popXcolor" type="color" value="#006EFF" />
+          </td>
+        </tr>
+        <tr>
+          <td class="field"><label for="popYcolor">Population 2:</label></td>
+          <td class="field">
+            <input id="popYcolor" type="color" value="#FF7B00" />
+          </td>
+        </tr>
+        <tr>
+          <td class="field" colspan="2">
+            <button id="randomize">Randomize</button>
+            <button id="runstop" value="true">Run</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <br /><br />
+      <p>Generations: 0</p>
+    </div>
+    <div id="board">&nbsp;</div>
+
+    <script src="schelling.js"></script>
+  </body>
+</html>
